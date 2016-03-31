@@ -1,0 +1,53 @@
+@import "helpers/_variables";
+
+#banner {
+    background-color: $gris;
+    padding: 15px 0;
+    font-size: 1rem;
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+    li {
+        display: inline-block;
+        margin-right: 15px;
+        a {
+            color: $gristexto;
+            font-weight: bold;
+        }
+    }
+}
+
+.media {
+    float: right;
+    margin-top: 10px;
+    .boletin {
+        background-color: $rojoclaro;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 3px 5px;
+        font-size: 1rem;
+    }
+    a {
+        margin-left: 15px;
+        font-size: 1.3rem;
+    }
+    .fa-facebook {
+        color: #487DA8;
+    }
+    .fa-twitter {
+        color: #46B5D9;
+    }
+    .fa-google-plus {
+        color: $rojoclaro;
+    }
+    .fa-envelope {
+        color: $amarillo;
+    }
+    .fa-rss {
+        color: #E28F32;
+    }
+}
