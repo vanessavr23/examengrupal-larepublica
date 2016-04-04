@@ -1,0 +1,33 @@
+h1{
+	font-weight: bold;
+}
+input.form-control, textarea.form-control{
+	background: $gris;
+	margin: 0 0 10px 0;
+	@include box-shadow (inset -2px 0px 25px -11px rgba(0,0,0,0.45));
+}
+p.opc{
+	padding-top: 10px;
+	margin-bottom:40px;
+}
+.radio{
+	margin: 0 15px 0 15px;
+	padding-top: 10px;
+}
+.form-group {
+    margin-bottom: 30px;
+    height: 20px;
+}
+.btn{
+	background: #333;
+    color: #fff;
+    margin-left: 50%;
+    margin-right: 40%;
+}
+.presentacion{
+	padding: 10px 3px 20px 3px;
+}
+.formulario{
+	width: 70%;
+    margin: 0 30% 0 15%;
+}

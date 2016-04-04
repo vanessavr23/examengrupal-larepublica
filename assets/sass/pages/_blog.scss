@@ -1,0 +1,37 @@
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h4, h5, h6{
+	font-weight: bold;
+}
+h5{
+	color:$gristexto;
+}
+
+.fa{
+	color: $rojoclaro;
+	font-size: 12px;
+}
+.caja {
+	border: 2px solid $gris;
+	width: 300px;
+	height:250px;
+	padding:10px;
+	float:left;
+	margin:10px;
+}
+.cajitaA {
+	height:100px;
+	width: 100%;
+	padding:15px;
+}
+.cajitaB {
+	height:100px;
+	background: $gris;
+	padding:10px;
+}
+
+.bloggers{
+	border: 2px solid $blanco;
+	@include shadow(0px 3px 5px grey);
+}
