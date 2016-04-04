@@ -1,0 +1,146 @@
+doctype html
+html(lang="es")
+	head
+		title blogs
+		meta(charset="utf-8")
+		meta(name="viewport",content="whidth=device-width, initial-scale=1")
+		link(href="assets/css/bootstrap.min.css",rel="stylesheet")
+		link(href="assets/css/font-awesome.min.css",rel="stylesheet")
+		link(href="assets/css/main.css",rel="stylesheet")
+	body 
+		header
+			.container
+				h1 Blogs
+				h5 LO ÚLTIMO EN BLOGS 
+					img.icono(src='assets/image/double-arrow-bottom.png')
+				.row
+					mixin caja(lema)
+						h6 Lunes, 14 de julio 2105
+						h4= lema
+					mixin cajita(subtitle, imagen)
+						.col-xs-5
+							img.bloggers(src='assets/image/#{imagen}')
+						.col-xs-11
+							h6 BLOG
+							h5= subtitle
+					.col-xs-16
+						.caja
+							.cajitaA.text-center
+								+caja('El gol de la muerte')
+							.cajitaB
+								+cajita('LIBROS','blog_avatar_01.jpg')
+						.caja
+							.cajitaA.text-center
+								+caja('Dios ha muerto... tengo las manos cubiertas de sangre')
+							.cajitaB
+								+cajita('Ya lo pasado, PASADO','blog_avatar_02.jpg')				
+						.caja
+							.cajitaA.text-center
+								+caja('¿cual es tu queso favorito?')
+							.cajitaB
+								+cajita('Decimas Cosas','blog_avatar_03.jpg')
+				.row
+					.col-xs-16
+						.caja
+							.cajitaA.text-center
+								+caja('El gol de la muerte')
+							.cajitaB
+								+cajita('Y tu... ¿Ya hiciste click?','blog_avatar_01.jpg')
+						.caja
+							.cajitaA.text-center
+								+caja('Dios ha muerto... tengo las manos cubiertas de sangre')
+							.cajitaB
+								+cajita('Educando con Amor','blog_avatar_02.jpg')				
+						.caja
+							.cajitaA.text-center
+								+caja('¿cual es tu queso favorito?')
+							.cajitaB
+								+cajita('Moda Ente Tendente','blog_avatar_03.jpg')
+				.row
+					.col-xs-16
+						.caja
+							.cajitaA.text-center
+								+caja('El gol de la muerte')
+							.cajitaB
+								+cajita('LIBROS','blog_avatar_01.jpg')
+						.caja
+							.cajitaA.text-center
+								+caja('Dios ha muerto... tengo las manos cubiertas de sangre')
+							.cajitaB
+								+cajita('Ya lo pasado, PASADO','blog_avatar_02.jpg')				
+						.caja
+							.cajitaA.text-center
+								+caja('¿cual es tu queso favorito?')
+							.cajitaB
+								+cajita('Decimas Cosas','blog_avatar_03.jpg')
+				.row
+					.col-xs-16
+						.caja
+							.cajitaA.text-center
+								+caja('El gol de la muerte')
+							.cajitaB
+								+cajita('LIBROS','blog_avatar_01.jpg')
+						.caja
+							.cajitaA.text-center
+								+caja('Dios ha muerto... tengo las manos cubiertas de sangre')
+							.cajitaB
+								+cajita('Ya lo pasado, PASADO','blog_avatar_02.jpg')				
+						.caja
+							.cajitaA.text-center
+								+caja('¿cual es tu queso favorito?')
+							.cajitaB
+								+cajita('Decimas Cosas','blog_avatar_03.jpg')
+				.row
+					.col-xs-16
+						.caja
+							.cajitaA.text-center
+								+caja('El gol de la muerte')
+							.cajitaB
+								+cajita('LIBROS','blog_avatar_01.jpg')
+						.caja
+							.cajitaA.text-center
+								+caja('Dios ha muerto... tengo las manos cubiertas de sangre')
+							.cajitaB
+								+cajita('Ya lo pasado, PASADO','blog_avatar_02.jpg')				
+						.caja
+							.cajitaA.text-center
+								+caja('¿cual es tu queso favorito?')
+							.cajitaB
+								+cajita('Decimas Cosas','blog_avatar_03.jpg')
+				.row
+					.col-xs-16
+						.caja
+							.cajitaA.text-center
+								+caja('El gol de la muerte')
+							.cajitaB
+								+cajita('LIBROS','blog_avatar_01.jpg')
+						.caja
+							.cajitaA.text-center
+								+caja('Dios ha muerto... tengo las manos cubiertas de sangre')
+							.cajitaB
+								+cajita('Ya lo pasado, PASADO','blog_avatar_02.jpg')				
+						.caja
+							.cajitaA.text-center
+								+caja('¿cual es tu queso favorito?')
+							.cajitaB
+								+cajita('Decimas Cosas','blog_avatar_03.jpg')
+				.row
+					.col-xs-16
+						.caja
+							.cajitaA.text-center
+								+caja('El gol de la muerte')
+							.cajitaB
+								+cajita('LIBROS','blog_avatar_01.jpg')
+						.caja
+							.cajitaA.text-center
+								+caja('Dios ha muerto... tengo las manos cubiertas de sangre')
+							.cajitaB
+								+cajita('Ya lo pasado, PASADO','blog_avatar_02.jpg')				
+						.caja
+							.cajitaA.text-center
+								+caja('¿cual es tu queso favorito?')
+							.cajitaB
+								+cajita('Decimas Cosas','blog_avatar_03.jpg')
+	
+script(src="js/jquery.min.js", type="text/javascript")
+script(src="js/bootstrap.min.js", type="text/javascript")
