@@ -1,0 +1,144 @@
+doctype html
+html
+    mixin subtitulo (text)
+        h4.columnistas-subtitulo= text
+            img.arrow-cols(src="assets/image/double-arrow-bottom.png", alt="arrow")
+    mixin columnas (titulo, src, alt, name, descripcion)
+        .col-lg-5.col-md-5
+            .columnas-box
+                p Lunes, 14 de julio de 2015
+                p= titulo
+                .columnista-box
+                    img(src=src, alt=alt)
+                    p.name.text-left= name
+                    p.descripcion-col.text-left= descripcion
+    mixin columnista (src, name, descripcion)
+        .col-lg-4.col-md-4 
+            .columnista-box
+                img(src=src)
+                p.name.text-left= name
+                p.descripcion-col.text-left= descripcion
+    head
+        title Columnistas
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel="stylesheet", href="assets/css/bootstrap.min12.css")
+        link(rel="stylesheet", href="assets/css/bootstrap.min.css")
+        link(rel="stylesheet", href="assets/css/font-awesome.css")
+        link(rel="stylesheet", href="assets/css/slick.css")
+        link(rel="stylesheet", href="assets/css/slick-theme.css")
+        link(rel="stylesheet", href="assets/sass/pages/columnistas.css")
+    body
+        include _header.jade
+        #descp
+            .container
+                h1 Columnistas
+                +subtitulo ("lo último en columnistas")
+        #columnas
+            .container
+                .row
+                    +columnas ("El gol de la muerte", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Augusto Álvarez Rodrich", "Claro y directo")
+                    +columnas ("Dios ha muerto... tengo las", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Mirko Lauer", "Observador")
+                    +columnas ("¿Cuál es tu queso favorito?", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Aldo Miyashiro", "Chino de mi barrio")
+                .row
+                    +columnas ("El gol de la muerte", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Francisco Durand", "Tiro al blanco")
+                    +columnas ("Dios ha muerto... tengo las", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Humberto Campodónico", "Cristal de Mira")
+                    +columnas ("¿Cuál es tu queso favorito?", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Javier Ágreda", "Jaque Perpetuo")
+                .row
+                    +columnas ("El gol de la muerte", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Augusto Álvarez Rodrich", "Claro y directo")
+                    +columnas ("Dios ha muerto... tengo las", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Mirko Lauer", "Observador")
+                    +columnas ("¿Cuál es tu queso favorito?", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Aldo Miyashiro", "Chino de mi barrio")
+                .row
+                    +columnas ("El gol de la muerte", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Augusto Álvarez Rodrich", "Claro y directo")
+                    +columnas ("Dios ha muerto... tengo las", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Humberto Campodónico", "Cristal de Mira")
+                    +columnas ("¿Cuál es tu queso favorito?", "assets/image/img_author_columnista.jpg", "augusto-alvarez-rodrich", "Javier Ágreda", "Jaque Perpetuo")     
+                .row.text-center
+                    .btn.boton-cols todas las columnas
+        #columnistas
+           .container
+                .row
+                    +subtitulo ("todos los columnistas")
+                .row.alph
+                    ul
+                        li.todos-cols: a(href="#") todos
+                        li.active-cols: a(href="#") a b c
+                        li: a(href="#") d e f
+                        li: a(href="#") g h i
+                        li: a(href="#") j k l 
+                        li: a(href="#") m n o
+                        li: a(href="#") pqrs
+                        li: a(href="#") tuv
+                        li: a(href="#") wxyz
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Tiro al blanco")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Cristal de Mira")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Delito de Opinión")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Actualidad Económica - Oscar Dancourt")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Mirada externa")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Defensa")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Tiro al blanco")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Cristal de Mira")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Delito de Opinión")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Actualidad Económica - Oscar Dancourt")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Mirada externa")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Defensa")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Tiro al blanco")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Cristal de Mira")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Delito de Opinión")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Actualidad Económica - Oscar Dancourt")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Mirada externa")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Defensa")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Tiro al blanco")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Cristal de Mira")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Delito de Opinión")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Actualidad Económica - Oscar Dancourt")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Mirada externa")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Defensa")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Tiro al blanco")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Cristal de Mira")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Delito de Opinión")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Actualidad Económica - Oscar Dancourt")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Mirada externa")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Defensa")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Tiro al blanco")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Cristal de Mira")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Delito de Opinión")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Actualidad Económica - Oscar Dancourt")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Mirada externa")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Defensa")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Tiro al blanco")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Cristal de Mira")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Jaque Perpetuo")
+                .row
+                    +columnista ("assets/image/img_author_columnista.jpg", "Francisco Durand", "Delito de Opinión")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Actualidad Económica - Oscar Dancourt")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Mirada externa")
+                    +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Defensa")
+    script(src="assets/js/jquery.js")
+    script(src="assets/js/bootstrap.min.js")
+    script(src="assets/js/slick.min.js")

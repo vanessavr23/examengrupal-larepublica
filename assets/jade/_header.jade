@@ -1,29 +1,109 @@
 doctype html
 html
+    mixin social (href, clase)
+        a(href=href): i.fa(class=clase)
     head
         title Header
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel="stylesheet", href="assets/css/bootstrap.min12.css")
         link(rel="stylesheet", href="assets/css/bootstrap.min.css")
         link(rel="stylesheet", href="assets/css/font-awesome.css")
+        link(rel="stylesheet", href="assets/css/slick.css")
+        link(rel="stylesheet", href="assets/css/slick-theme.css")
         link(rel="stylesheet", href="assets/sass/_header.css")
     body
-        #banner
+        #banner.hidden-xs
             .container
                 img(src="assets/image/banner_top.jpg", alt="_navegan", class="img-responsive")
                 .row
-                    .col-lg-7.col-md-7
+                    .col-lg-8.col-md-8
                         ul
                             li: a(href="http://www.libero.pe/") libero.pe
                             li: a(href="http://www.elpopular.pe/") elpopular.pe
                             li: a(href="http://fundacionmohme.org/") fundación gustavo mohme llona
-                    .col-lg-5.col-md-5    
+                    .col-lg-8.col-md-8    
                         .media
-                            .boletin.btn suscríbete al boletín
-                            a(href="https://www.facebook.com/larepublicape/?fref=ts"): i.fa.fa-facebook
-                            a(href="https://twitter.com/larepublica_pe?lang=es"): i.fa.fa-twitter 
-                            a(href="https://plus.google.com/+larepublica/posts"): i.fa.fa-google-plus 
-                            a(href="https://www.facebook.com/larepublicape/?fref=ts"): i.fa.fa-envelope 
-                            a(href="https://www.facebook.com/larepublicape/?fref=ts"): i.fa.fa-rss 
+                            a.boletin.btn(href="http://larepublica.pe/boletin") suscríbete al boletín
+                            +social ("https://www.facebook.com/larepublicape/?fref=ts", "fa-facebook")
+                            +social ("https://twitter.com/larepublica_pe?lang=es", "fa-twitter")
+                            +social ("https://plus.google.com/+larepublica/posts", "fa-google-plus") 
+                            +social ("https://www.facebook.com/larepublicape/?fref=ts", "fa-envelope") 
+                            +social ("https://www.facebook.com/larepublicape/?fref=ts", "fa-rss")
+                            form
+                                input(type="text", placeholder="BUSCAR")
+                                i.fa.fa-search.fa-rotate-90
+        header
+            .container
+                .row
+                    .col-lg-6.col-md-6
+                        img.logo(src="assets/image/logo-la-republica.jpg", alt="logo-la-república")
+                    .col-lg-5.col-md-5
+                        .futbol-box
+                            div Especial de Fútbol
+                            div Todo sobre la champions League
+                    .col-lg-5.col-md-5
+                        .editorial
+                            div
+                                img(src="assets/image/img_editorial_text.jpg", alt="editorial")
+                            div
+                                p La corrupción, los orígenes
+                                p por: Gustavo Mohme Llana
+                            img(src="assets/image/img_author.jpg", alt="gustavo-mohme-llana")
+            .container
+                .navbar.navbar-default(role="navegacion")
+                    .navbar-header
+                        button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                            span.sr-only Toggle navigation
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                    .navbar-collapse.collapse
+                        ul.nav.navbar-nav
+                            li: a(href="#") política
+                            li: a(href="#") economía
+                            li: a(href="#") sociedad
+                            li: a(href="#") elecc. regionales
+                            li: a(href="#") deportes
+                            li: a(href="#") champions l.
+                            li: a(href="#") espectáculos
+                            li: a(href="#") ed. impresa
+                            li: a(href="#") regionales
+                            li.dropdown
+                                a.dropdown.toggle(href="#", data-toggle="dropdown") más secciones
+                                    b.caret
+                                ul.dropdown-menu
+                                    li: a(href="#") tecnología
+                                    li: a(href="#") turismo
+                                    li: a(href="#") empresa
+        #temas
+            .container
+                .temas-del-dia temas del día
+                .tags
+                    ul
+                        li: a(href="#") <i class="fa fa-arrow-left"></i> Globos de oro
+                            i.fa.fa-circle
+                        li: a(href="#") Youtube
+                            i.fa.fa-circle
+                        li: a(href="#") PNP
+                            i.fa.fa-circle
+                        li: a(href="#") Charlie Hebdo
+                            i.fa.fa-circle
+                        li: a(href="#") FC Barcelona
+                            i.fa.fa-circle
+                        li: a(href="#") Alianza Lima
+                            i.fa.fa-circle
+                        li: a(href="#") Balón de Oro
+                            i.fa.fa-circle
+                        li: a(href="#") Alianza Lima
+                            i.fa.fa-circle
+                        li: a(href="#") Munici
+                            i.fa.fa-arrow-right
+        #publicidad.hidden-xs
+            .container
+                img.img-responsive(src="assets/image/banner-header.jpg", alt="pucp-maestrías")
+        script(src="assets/js/jquery.js")
+        script(src="assets/js/bootstrap.min.js")
+        script(src="assets/js/slick.min.js")
             
     
