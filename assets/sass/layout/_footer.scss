@@ -1,0 +1,42 @@
+footer {
+    background-color: #E2E2E2;
+    padding: 30px 0;
+    margin-top: 20px;
+    img {
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    p:nth-child(2) {
+        font-weight: bold;
+        font-size: 1.7rem;
+    }
+    .mb-0 {
+        margin-bottom: 0;
+        font-size: 1.4rem;
+    }
+    p:last-child {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+    ul:first-child {
+        list-style-type: none;
+        font-size: 1.4rem;
+        a {
+            color: $plomo;
+        }
+    }
+    .diarios {
+        padding-left: 10px;
+        font-size: 1.1rem !important;
+        margin-top: 30px;
+        li {
+            display: inline-block;
+            color: $gristexto;
+            margin-right: 8px;
+        }
+        a {
+            color: $gristexto !important;
+        }
+    }
+}

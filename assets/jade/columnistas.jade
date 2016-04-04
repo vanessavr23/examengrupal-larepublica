@@ -27,7 +27,9 @@ html
         link(rel="stylesheet", href="assets/css/font-awesome.css")
         link(rel="stylesheet", href="assets/css/slick.css")
         link(rel="stylesheet", href="assets/css/slick-theme.css")
+        link(rel="stylesheet", href="assets/sass/base/global.css")
         link(rel="stylesheet", href="assets/sass/pages/columnistas.css")
+
     body
         include _header.jade
         #descp
@@ -139,6 +141,7 @@ html
                     +columnista ("assets/image/img_author_columnista.jpg", "Humberto Campodónico", "Actualidad Económica - Oscar Dancourt")
                     +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Mirada externa")
                     +columnista ("assets/image/img_author_columnista.jpg", "Javier Ágreda", "Defensa")
+        include _footer.jade
     script(src="assets/js/jquery.js")
     script(src="assets/js/bootstrap.min.js")
     script(src="assets/js/slick.min.js")
