@@ -3,12 +3,13 @@ h1{
 }
 input.form-control, textarea.form-control{
 	background: $gris;
-	margin: 0 0 10px 0;
+	margin: 0 0 20px 0;
+	height: 29px;
 	@include box-shadow (inset -2px 0px 25px -11px rgba(0,0,0,0.45));
 }
 p.opc{
-	padding-top: 10px;
-	margin-bottom:40px;
+	padding-top: 30px;
+    margin-bottom: 30px;
 }
 .radio{
 	margin: 0 15px 0 15px;
@@ -18,7 +19,7 @@ p.opc{
     margin-bottom: 30px;
     height: 20px;
 }
-.btn{
+.btn-lg{
 	background: #333;
     color: #fff;
     margin-left: 50%;
@@ -30,4 +31,9 @@ p.opc{
 .formulario{
 	width: 70%;
     margin: 0 30% 0 15%;
+}
+button.btn.btn-default.btn-lg{
+	background: black;
+    color: white;
+    margin-left: 45%;
 }

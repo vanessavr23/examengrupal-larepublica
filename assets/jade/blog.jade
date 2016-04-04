@@ -7,7 +7,9 @@ html(lang="es")
 		link(href="assets/css/bootstrap.min.css",rel="stylesheet")
 		link(href="assets/css/font-awesome.min.css",rel="stylesheet")
 		link(href="assets/css/main.css",rel="stylesheet")
-	body 
+		link(rel="stylesheet", href="assets/sass/base/global.css")
+	body
+		include _header.jade 
 		header
 			.container
 				h1 Blogs
@@ -141,6 +143,6 @@ html(lang="es")
 								+caja('¿cual es tu queso favorito?')
 							.cajitaB
 								+cajita('Decimas Cosas','blog_avatar_03.jpg')
-	
+		include _footer.jade
 script(src="js/jquery.min.js", type="text/javascript")
 script(src="js/bootstrap.min.js", type="text/javascript")
