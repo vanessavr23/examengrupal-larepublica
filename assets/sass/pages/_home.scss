@@ -94,10 +94,11 @@
 				padding:5px 5px;
 				img{
 					border: $blanco 6px solid;
-					box-shadow: 0px 3px 3px black;
+					box-shadow: 0px 3px 3px gray;
 				}
 				.nombre{
-					font-size:10px;
+					font-size:11px;
+					padding-top:5px;
 				}
 				.tema{
 					font-size:13px;
@@ -472,4 +473,8 @@
 
 	.todo{
 	width:100%;
+	}
+	div.navbar-collapse.collapse{
+		background: $rojo;
+		border-radius:4px;
 	}
