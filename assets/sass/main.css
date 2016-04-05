@@ -588,6 +588,9 @@ button.btn.btn-default.btn-lg {
     background-repeat: repeat;
     width: 100%;
     overflow: hidden; }
+    .ultimasnoticias .col-md-6 .cuadrito1 .rojo {
+      color: #B01612;
+      font-weight: 700; }
     .ultimasnoticias .col-md-6 .cuadrito1 .negrita {
       font-weight: 700;
       font-size: 18px; }
@@ -599,13 +602,43 @@ button.btn.btn-default.btn-lg {
       position: absolute;
       top: 15px;
       left: 40%; }
+  .ultimasnoticias .col-md-6 .cuadrito2 {
+    position: relative;
+    background-image: url(../image/trama_square.jpg);
+    background-repeat: repeat;
+    width: 100%;
+    overflow: hidden; }
+    .ultimasnoticias .col-md-6 .cuadrito2 .icono {
+      display: block;
+      margin: auto;
+      position: absolute;
+      top: 15px;
+      left: 40%; }
+    .ultimasnoticias .col-md-6 .cuadrito2 button {
+      width: 60%;
+      background: #B01612;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 10px; }
+    .ultimasnoticias .col-md-6 .cuadrito2 .rojo {
+      color: #B01612;
+      font-weight: 700; }
   .ultimasnoticias .col-md-6 .boletin {
     display: inline-block;
     width: 90%;
     background: #fff;
     margin: 45px 0 20px 0; }
+    .ultimasnoticias .col-md-6 .boletin .negrita {
+      font-weight: 700;
+      font-size: 18px; }
+    .ultimasnoticias .col-md-6 .boletin .negra {
+      font-weight: 700; }
     .ultimasnoticias .col-md-6 .boletin p {
       margin: 40px 0 10px 0; }
+    .ultimasnoticias .col-md-6 .boletin .largo {
+      margin: 10px;
+      font-size: 13px; }
     .ultimasnoticias .col-md-6 .boletin input {
       width: 80%;
       border-radius: 5px;
@@ -618,6 +651,11 @@ button.btn.btn-default.btn-lg {
       border: none;
       border-radius: 5px;
       margin-bottom: 20px; }
+    .ultimasnoticias .col-md-6 .boletin .puntos {
+      margin: 30px 0 0 0; }
+      .ultimasnoticias .col-md-6 .boletin .puntos input {
+        position: relative;
+        bottom: 22px; }
   .ultimasnoticias .col-md-6 .barra {
     width: 100%; }
     .ultimasnoticias .col-md-6 .barra .linea {
@@ -668,6 +706,22 @@ button.btn.btn-default.btn-lg {
       .ultimasnoticias .col-md-6 .aweita .mas .morado {
         color: #832E7F;
         font-weight: 700; }
+    .ultimasnoticias .col-md-6 .aweita .mas1 {
+      border-bottom: 5px solid #D62247;
+      margin: 0 80px !important;
+      padding-bottom: 10px;
+      margin: 0; }
+      .ultimasnoticias .col-md-6 .aweita .mas1 .rosa {
+        color: #D62247;
+        font-weight: 700; }
+    .ultimasnoticias .col-md-6 .aweita .mas2 {
+      border-bottom: 5px solid #FFEA56;
+      margin: 0 80px !important;
+      padding-bottom: 10px;
+      margin: 0; }
+      .ultimasnoticias .col-md-6 .aweita .mas2 .rojo {
+        color: #B01612;
+        font-weight: 700; }
   .ultimasnoticias .col-md-6 .jov {
     border: solid #788596 3px; }
   .ultimasnoticias .col-md-6 .plomo {
@@ -687,7 +741,7 @@ button.btn.btn-default.btn-lg {
     .ultimasnoticias .col-md-6 .abajo .row {
       margin: 10px 0; }
       .ultimasnoticias .col-md-6 .abajo .row .col-md-12 .chico {
-        font-size: 10px;
+        font-size: 11px;
         line-height: 100%;
         padding: 0 !important;
         text-decoration: underline; }

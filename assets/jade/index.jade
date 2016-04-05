@@ -175,6 +175,7 @@ body
 					+marco('Roque Benavides respalda proyecto Tía María y espera que Conga se socialice', 'Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...', '0', 'AREQUIPA')
 					+marco('Youtube: hombre finge ahogarse y su perro lo rescata | FOTOS', 'La actriz Emma Watson fue confirmada por Disney como la protagonista de La bella y la bestia en la versión de carne y hueso.', '10', 'ESPECTÁCULOS')
 					+marco('Real Madrid: Cristiano Ronaldo fue sancionado con dos partidos y sí estará contra el Atlético de Madrid', 'Despues de la pésima actitud de Cristiano Ronaldo, al agredir a Edimar en el partido del cuadro madridista contra el Córdoba, el Comité de Competición ha llegado a la...', '0', 'España')
+					+marco('Roque Benavides respalda proyecto Tía María y espera que Conga se socialice', 'Zenaida Condori Contreras Arequipa Para el presidente de la Compañía de Minas Buenaventura, Roque Benavides, el proyecto Tía María, que promueve Southern Perú, ya debe...', '0', 'AREQUIPA')
 				.col-md-6
 					.cuadrito.text-center
 						img(src="assets/image/img_sucribe.png", alt="")
@@ -249,16 +250,17 @@ body
 						.boletin
 							p.negrita La pregunta de hoy
 							p ¿Cree usted que la premier Ana Jara debe renunciar?
-							label.radio-inline
-								input(type="radio", name="inlineRadioOptions", id="inlineRadio1", value="option1")
-							label.radio-inline
-								input(type="radio", name="inlineRadioOptions", id="inlineRadio1", value="option1")
+							.puntos.text-center
+								label.radio-inline Sí
+									input(type="radio", name="inlineRadioOptions", id="inlineRadio1", value="option1") 
+								label.radio-inline No
+									input(type="radio", name="inlineRadioOptions", id="inlineRadio1", value="option1")
 							button VOTAR
-							p Ver resultados
+							p.rojo Ver resultados
 						.boletin
-							p La pregunta de ayer
+							p.negrita La pregunta de ayer
 							p ¿Cree usted que se militarizó la conmemoración del fallo de La Haya en Lima?
-							p Ver preguntas pasadas						
+							p.rojo Ver preguntas pasadas						
 					.aweita.text-center
 						img(src="assets/image/logo_libero.jpg", alt="")
 						.row
@@ -266,7 +268,8 @@ body
 							+riquelme('assets/image/img_aweita.jpg','Jefferson Farfán: Schalke 04 tampoco sabe cuándo volverá a las canchas[FOTOS]')
 							+riquelme('assets/image/img_aweita.jpg','Barcelona vs Villarreal: culés ganaron 3-2 con goles de Lionel Messi y Neymar por la Liga BBVA [VIDEO]')
 							+riquelme('assets/image/img_aweita.jpg','Perú cayó 3-1 ante Colombia por el hexagonal final del Sudamericano Sub 20 [VIDEO/FOTOS]')
-						p Más en Libero.pe
+						p.mas1 Más en 
+							span.rosa Libero.pe
 					.aweita.text-center
 						img(src="assets/image/logo_popular.jpg", alt="")
 						.row
@@ -274,7 +277,8 @@ body
 							+riquelme('assets/image/img_aweita.jpg','Corinthians:Paolo Guerrero dedica su gol a Alondra García')
 							+riquelme('assets/image/img_aweita.jpg','Angie Arizaga es amenazada de muerte (VIDEO)')
 							+riquelme('assets/image/img_aweita.jpg','Philip Seymour Hoffman: Un año sin el premiado actor(VIDEO)')
-						p Más en elPopular.pe
+						p.mas2 Más en 
+							span.rojo elPopular.pe
 					.aweita.text-center
 						img(src="assets/image/logo_wapa.jpg", alt="")
 						.row
@@ -282,12 +286,14 @@ body
 							+riquelme('assets/image/img_aweita.jpg','Shakira y Piqué ¡Ya son padres por segunda vez!')
 							+riquelme('assets/image/img_aweita.jpg','Ted 2: Mira el trailer de la cinta')
 							+riquelme('assets/image/img_aweita.jpg','Cómo usar zapatos altos sin dolor')
-						p Más en Wapa.pe
-					.cuadrito.text-center
-						img(src="assets/image/img_sucribe.png", alt="")
+						p.mas1 Más en 
+							span.rosa Wapa.pe
+					.cuadrito2.text-center
+						img.icono(src="assets/image/img_reporteroc.png", alt="")
 						.boletin
-							p Reportero ciudadano
+							p.negrita Reportero ciudadano
 							img(src="assets/image/img_sd_reporteroc.jpg", alt="")
-							p ¿Está permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.
+							p.negra Estacionamiento indebido
+							p.largo ¿Está permitido que dejen su auto en reiteradas ocasiones toda la noche en la puerta de tu casa? Placa DG6232, eso que antes lo dejaba entre la vereda y mi puerta.
 						button ENVIAR FOTOS
-						p Más fotos
+						p.rojo Más fotos

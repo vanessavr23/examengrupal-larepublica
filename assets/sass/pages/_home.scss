@@ -253,6 +253,9 @@
 			background-repeat: repeat;
 			width: 100%;
 			overflow: hidden;
+			.rojo{
+				color: $rojo;
+				font-weight: 700;			}
 			.negrita{
 				font-weight: 700;
 				font-size: 18px;
@@ -270,13 +273,50 @@
 				left: 40%;
 			}
 		}
+		.cuadrito2{
+			position: relative;
+			background-image: url(../image/trama_square.jpg);
+			background-repeat: repeat;
+			width: 100%;
+			overflow: hidden;
+			.icono{
+				display: block;
+				margin: auto;
+				position: absolute;
+				top: 15px;
+				left: 40%;
+			}
+			button{
+				width: 60%;
+				background: $rojo;
+				color: $blanco;
+				border: none;
+				border-radius: 5px;
+				margin-bottom: 10px;
+			}
+			.rojo{
+				color: $rojo;
+				font-weight: 700;
+			}
+		}
 		.boletin{
 			display: inline-block;
 			width: 90%;
 			background: $blanco;
 			margin: 45px 0 20px 0;
+			.negrita{
+				font-weight: 700;
+				font-size: 18px;
+			}
+			.negra{
+				font-weight: 700;
+			}
 			p{
 				margin: 40px 0 10px 0;
+			}
+			.largo{
+				margin:10px;
+				font-size: 13px;
 			}
 			input{
 				width: 80%;
@@ -291,6 +331,13 @@
 				border: none;
 				border-radius: 5px;
 				margin-bottom: 20px;
+			}
+			.puntos{
+				margin: 30px 0 0 0;
+				input{
+					position:relative;
+					bottom: 22px;
+				}
 			}
 		}
 		.barra{
@@ -356,6 +403,27 @@
 						font-weight: 700;
 					}
 			}
+			.mas1{
+				border-bottom: 5px solid #D62247;
+				margin: 0 80px !important;
+				padding-bottom:10px; 
+				margin: 0;
+				.rosa{
+						color: #D62247;
+						font-weight: 700;
+					}
+			}
+			.mas2{
+				border-bottom: 5px solid $amarillo;
+				margin: 0 80px !important;
+				padding-bottom:10px; 
+				margin: 0;
+				.rojo{
+						color: $rojo;
+						font-weight: 700;
+					}
+			}
+
 		}
 		.jov{
 			border: solid $plomoaside 3px;
@@ -382,7 +450,7 @@
 				margin:10px 0;
 				.col-md-12{
 				.chico{
-					font-size: 10px;
+					font-size: 11px;
 					line-height: 100%;
 					padding:0 !important;
 					text-decoration: underline;
